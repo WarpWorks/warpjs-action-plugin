@@ -1,0 +1,7 @@
+/.eslintrc.*.json
+/.npmignore
+/.nycrc
+/.nyc_output
+/reports
+/**/*.test.js
+/warp-works-*.tgz
