@@ -18,13 +18,16 @@ If you want to stay on the current page, this getter should return a URL, and
 the script should handle a click on this action. Something like this:
 
     (($) => $(document).ready(() => {
-      $(document).on('click', `[data-warpjs-plugin-identifier="your-identifier"]', function(e) {
+      $(document).on('click', `[data-warpjs-plugin-identifier="your-identifier"]`, function(e) {
         // Code to open a modal and deal with all the events.
       });
     }))(jQuery);
 
 If you want the click to bring you to the path defined in the plugins'
 configuration `path`, the getter should return a falsy value.
+
+The `your-identifier` is generated from
+[.pluginIdentifier](https://github.com/WarpWorks/warpjs-plugin#pluginIdentifier).
 
 
 ### <a name="getRootUrl"></a> `.getRootUrl(domain, type, id)`
