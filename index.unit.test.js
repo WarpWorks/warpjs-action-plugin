@@ -21,15 +21,15 @@ describe("index", () => {
         let instance;
 
         beforeEach(() => {
-            const config = {};
+            const config = { auth: "admin" };
             const warpCore = {};
             const packageJson = {
                 name: '@test/module',
                 version: '1.2.3'
             };
-            const actionType = 'action-type';
+            const pluginType = 'action-type';
 
-            instance = new WarpjsActionPlugin(config, warpCore, packageJson, actionType);
+            instance = new WarpjsActionPlugin(config, warpCore, packageJson, pluginType);
         });
 
         context(".jsScriptUrl", () => {

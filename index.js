@@ -4,9 +4,9 @@ const WarpjsPlugin = require('@warp-works/warpjs-plugin');
 class WarpjsActionError extends WarpjsPlugin.Error {}
 
 class WarpjsActionPlugin extends WarpjsPlugin {
-    constructor(config, warpCore, packageJson, actionType) {
-        super(config, warpCore, packageJson);
-        this.actionType = actionType;
+    constructor(config, warpCore, packageJson, pluginType) {
+        super(config, warpCore, packageJson, pluginType);
+        this.isAction = true;
     }
 
     static get Error() {
@@ -23,7 +23,7 @@ class WarpjsActionPlugin extends WarpjsPlugin {
 
     toJSON(domain, type, id) {
         return Object.freeze(_.extend({}, super.toJSON(domain, type, id)), {
-            actionType: this.actionType,
+            isAction: this.isAction,
             jsScriptUrl: this.jsScriptUrl,
             rootUrl: this.getRootUrl(domain, type, id)
         });

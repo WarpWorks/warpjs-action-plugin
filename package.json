@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-action-plugin",
-  "version": "0.0.1",
+  "version": "1.2.0",
   "description": "Base action plugin class",
   "main": "index.js",
   "scripts": {
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/WarpWorks/warpjs-action-plugin#readme",
   "dependencies": {
-    "@warp-works/warpjs-plugin": "0.0.1",
+    "@warp-works/warpjs-plugin": "1.2",
     "lodash": "4.17.x"
   },
   "devDependencies": {
@@ -42,7 +42,7 @@
     "@quoin/node-test-helpers": "1",
     "eslint": "4",
     "eslint-plugin-html": "4.0",
-    "eslint-plugin-import": "2.12",
+    "eslint-plugin-import": "2.13",
     "eslint-plugin-json": "1.2",
     "eslint-plugin-node": "6.0",
     "eslint-plugin-promise": "3.8",
