@@ -1,15 +1,19 @@
 {
   "name": "@warp-works/warpjs-action-plugin",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Base action plugin class",
   "main": "index.js",
+  "engines": {
+    "node": ">=8.12.0"
+  },
   "scripts": {
-    "prepublish": "npm run -s lint && npm run -s test",
+    "pretest": "npm run -s lint",
+    "prepack": "npm run -s test",
     "coverage": "npm run -s coverage:unit",
     "coverage:unit": "nyc --report-dir=reports/coverage/unit npm run -s test:unit",
     "lint": "npm run -s lint:node && npm run -s lint:test",
-    "lint:node": "eslint --fix --config=.eslintrc.node.json --ignore-pattern \"*.test.js\" *.js lib",
-    "lint:test": "eslint --fix --config=.eslintrc.test.json \"lib/**/*.test.js\" \"*.test.js\"",
+    "lint:node": "eslint --fix --config=.eslintrc.node.json --ignore-pattern '*.test.js' *.js",
+    "lint:test": "eslint --fix --config=.eslintrc.test.json '*.test.js'",
     "test": "npm run -s test:unit",
     "test:unit": "mocha \"*.unit.test.js\" \"lib/**/*.unit.test.js\""
   },
@@ -34,20 +38,21 @@
   },
   "homepage": "https://github.com/WarpWorks/warpjs-action-plugin#readme",
   "dependencies": {
-    "@warp-works/warpjs-plugin": "1.2",
-    "lodash": "4.17.x"
+    "@warp-works/warpjs-plugin": "~1.2.4",
+    "lodash": "~4.17.14"
   },
   "devDependencies": {
-    "@quoin/eslint-config-quoin": "latest",
-    "@quoin/node-test-helpers": "1",
-    "eslint": "4",
-    "eslint-plugin-html": "4.0",
-    "eslint-plugin-import": "2.13",
-    "eslint-plugin-json": "1.2",
-    "eslint-plugin-node": "6.0",
-    "eslint-plugin-promise": "3.8",
-    "eslint-plugin-standard": "3.1",
-    "mocha": "5",
-    "nyc": "12.0"
+    "@quoin/eslint-config-quoin": "~0.3.2",
+    "@quoin/node-test-helpers": "~1.0.3",
+    "eslint": "~6.0.1",
+    "eslint-config-standard": "~13.0.1",
+    "eslint-plugin-html": "~6.0.0",
+    "eslint-plugin-import": "~2.18.0",
+    "eslint-plugin-json": "~1.4.0",
+    "eslint-plugin-node": "~9.1.0",
+    "eslint-plugin-promise": "~4.2.1",
+    "eslint-plugin-standard": "~4.0.0",
+    "mocha": "~6.1.4",
+    "nyc": "~14.1.1"
   }
 }
