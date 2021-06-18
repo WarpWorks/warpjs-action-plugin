@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-action-plugin",
-  "version": "2.0.0-rc.1",
+  "version": "2.0.0",
   "description": "Base action plugin class",
   "main": "index.js",
   "publishConfig": {
@@ -46,8 +46,8 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@quoin/eslint-config-quoin": "^1.0.0-rc.2",
-    "@quoin/node-test-helpers": "~1.0.3",
+    "@quoin/eslint-config-quoin": "^2.0.0",
+    "@quoin/node-test-helpers": "^2.0.0",
     "eslint": "^7.28.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-html": "^6.1.2",
@@ -55,7 +55,7 @@
     "eslint-plugin-json": "^3.0.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "mocha": "^9.0.0",
+    "mocha": "^9.0.1",
     "nyc": "^15.1.0"
   }
 }
