@@ -1,6 +1,6 @@
 {
   "name": "@warp-works/warpjs-action-plugin",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Base action plugin class",
   "main": "index.js",
   "publishConfig": {
@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/WarpWorks/warpjs-action-plugin#readme",
   "dependencies": {
-    "@warp-works/warpjs-plugin": "^2.0.0-rc.1",
+    "@warp-works/warpjs-plugin": "^2.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
